@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ivandimitrov.colorpicker2.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:paddingLeft="@dimen/scrollview_horizontal_padding"
+    android:paddingRight="@dimen/scrollview_horizontal_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/colors_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.example.ivandimitrov.colorpicker2.DrawView
+                android:id="@+id/draw_view"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_marginTop="15dp"
+                android:descendantFocusability="blocksDescendants" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.ivandimitrov.colorpicker2.SliderView
+                android:id="@+id/slider_view"
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:text="Color" />
+
+    </LinearLayout>
+
+</com.example.ivandimitrov.colorpicker2.MyScrollView>
